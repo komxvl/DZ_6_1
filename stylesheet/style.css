@@ -1,0 +1,59 @@
+p:after{
+    content:'*';
+    color:red;
+}
+p:before{
+    content:'\002602';
+    color:pink;
+}
+.first-state{
+    background: green;
+}
+.first-state:hover{
+    background: yellow;
+}
+.first-state:active{
+    background: red;
+}
+.second-state{
+    background: violet;
+}
+.second-state:hover{
+    background: brown;
+}
+.second-state:active{
+    background: gold;
+}
+.input-active{
+    outline: 0 !important;
+}
+.input-active:focus{
+    border:2px solid green;
+      outline: 0 !important;
+}
+.odd p:nth-child(2n) {
+    background: grey;
+}
+.star p::first-letter{
+    font-size: 2em;
+    color:red;
+    font-family: Georgia;
+}
+.triangle{
+    height: 15px;
+    width: 30px;
+    background: #000;
+    position:relative;
+    margin-left: 10px;
+}
+.triangle:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 10px solid #000;
+    position: absolute;
+    top: 3px;
+    left: -10px;
+}
